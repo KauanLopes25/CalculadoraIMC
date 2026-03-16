@@ -207,10 +207,17 @@ fun CalculadoraImc(modifier: Modifier = Modifier){
             modifier = Modifier
                 .fillMaxWidth()
                 .height(60.dp)
-                .background(Color.Green)
+                .padding(horizontal = 66.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = Color(0,255,0)
+            )
         ) {
             Row(
                 modifier = Modifier
+                    .fillMaxWidth()
+                    .fillMaxHeight(),
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
                     text = "22 Peso Ideal",
